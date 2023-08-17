@@ -1,0 +1,9 @@
+<launch>
+  
+  <node pkg="neuvition_driver" type="neuvition_node" name="neuvition_node"  clear_params="true" output="screen">
+
+　　　　<rosparam command="load" file="$(find neuvition_driver)/params/driverparams.yaml" ns="config" />
+
+  </node>    
+
+</launch>
